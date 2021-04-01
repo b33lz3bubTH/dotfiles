@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/b33lz3bub/.config/kitty'
+let g:netrw_dirhist_4='/home/b33lz3bub/.config/gtk-3.0'
+let g:netrw_dirhist_3='/home/b33lz3bub/.config/gtk-2.0'
+let g:netrw_dirhist_2='/home/b33lz3bub/Documents/cpp-rat'
+let g:netrw_dirhist_1='/home/b33lz3bub/.config/qtile/themes'
