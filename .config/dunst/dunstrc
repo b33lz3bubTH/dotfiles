@@ -9,14 +9,14 @@ indicate_hidden = yes
 shrink = yes
 
 transparency = 0
-separator_height = 2
-padding = 8
-horizontal_padding = 13
-frame_width = 8
+separator_height = 0
+padding = 20
+horizontal_padding = 20
+frame_width = 2
 frame_color = "#2E3440"
 separator_color = "#404859"
 
-font = Inconsolata Bold 10
+font = Cascadia Code 10
 
 line_height = 0
 markup = full
@@ -36,11 +36,13 @@ history_length = 20
 always_run_script = true
 corner_radius = 0
 icon_position = left
-max_icon_size = 96
+max_icon_size = 60
 
-icon_path = /usr/share/icons/Papirus-Dark-Custom/48x48/actions/:/usr/share/icons/Papirus-Dark-Custom/48x48/apps/:/usr/share/icons/Papirus-Dark-Custom/48x48/devices/:/usr/share/icons/Papirus-Dark-Custom/48x48/emblems/:/usr/share/icons/Papirus-Dark-Custom/48x48/emotes/:/usr/share/icons/Papirus-Dark-Custom/48x48/mimetypes/:/usr/share/icons/Papirus-Dark-Custom/48x48/places/:/usr/share/icons/Papirus-Dark-Custom/48x48/status/
+# icon_path = /usr/share/icons/Papirus-Dark-Custom/48x48/actions/:/usr/share/icons/Papirus-Dark-Custom/48x48/apps/:/usr/share/icons/Papirus-Dark-Custom/48x48/devices/:/usr/share/icons/Papirus-Dark-Custom/48x48/emblems/:/usr/share/icons/Papirus-Dark-Custom/48x48/emotes/:/usr/share/icons/Papirus-Dark-Custom/48x48/mimetypes/:/usr/share/icons/Papirus-Dark-Custom/48x48/places/:/usr/share/icons/Papirus-Dark-Custom/48x48/status/
 
-browser = google-chrome-stable
+icon_path = /home/b33lz3bub/.icons/McCrouz-iCons-master/status/scalable-dark/:/home/b33lz3bub/.icons/McCrouz-iCons-master/devices/48/:/home/b33lz3bub/.icons/McCrouz-iCons-master/mimes/48/:/home/b33lz3bub/.icons/McCrouz-iCons-master/apps/128/
+
+browser = chromium
 
 mouse_left_click = close_current
 mouse_middle_click = do_action

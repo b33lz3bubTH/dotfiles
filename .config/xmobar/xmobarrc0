@@ -29,4 +29,4 @@ Config { font    = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=18:antialias=
         \<fc=#FFB86C> %cpu% </fc>\
         \<fc=#FF5555> %memory% </fc>\
         \<fc=#c3e88d> %enp2s0% </fc>\
-        \<fc=#8BE9FD> %date% </fc>    "
+        \<fc=#8BE9FD> %date% </fc>         "

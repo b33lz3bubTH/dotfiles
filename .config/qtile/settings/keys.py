@@ -53,7 +53,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "m", lazy.spawn("ulauncher --no-extensions --no-window-shadow")),
 
     # Window Nav
-    ([mod, "shift"], "m", lazy.spawn("rofi -show run")),
+    ([mod, "shift"], "m", lazy.spawn("rofi -show")),
 
     # Browser
     ([mod], "b", lazy.spawn("chromium")),

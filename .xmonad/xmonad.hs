@@ -122,7 +122,7 @@ myStartupHook = do
           spawnOnce "feh --bg-scale ~/Pictures/wall.jpg &"
           spawnOnce "picom --experimental-backends &"
           spawnOnce "/usr/bin/emacs --daemon &"
-          spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 22 &" 
+          spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 23 &"
           spawnOnce "volumeicon &"      
           -- spawnOnce "kak -d -s mysession &"  -- kakoune daemon for better performance
           -- spawnOnce "urxvtd -q -o -f &"      -- urxvt daemon for better performance
@@ -600,12 +600,19 @@ myKeys =
 
     ("M-t", treeselectAction tsDefaultConfig),
 
+    ("M-S-<Return>", shellPrompt dtXPConfig),
+
     -- THIS MENU IS VERY UGLY
     -- ("M-S-o", spawnSelected' myAppGrid),
 
 
     -- Menu
-    ("M-m", spawn "ulauncher --no-extensions --no-window-shadow"),
+    -- ("M-m", spawn "ulauncher --no-extensions --no-window-shadow"),
+
+	("M-m", spawn "~/.config/rofi/launchers/misc/launcher.sh"),
+	("M-a", spawn "~/.config/rofi/applets/menu/apps.sh"),
+
+    
     -- Window nav
     ("M-S-m", spawn "rofi -show"),
     -- Browser
