@@ -1,6 +1,6 @@
 # dotfiles
 my dot files
-
+BTW PICOM IS SHIT, ALL FORKS OF IT, pure shit.
 
 
 pip install ueberzug | needed for image preview in alacritty.
