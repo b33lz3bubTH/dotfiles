@@ -22,7 +22,7 @@ from settings.keys import mod, keys
 # nf-mdi-layers
 
 groups = [Group(i) for i in [
-    "   ", "   ", "   ", "   ", "   ", "   ", "   ", "   ", "   ",
+    "  ", "  ", "  ", "  ", "  ", " ﭮ ", "  ", "  ", " 視 ",
 ]]
 
 for i, group in enumerate(groups):

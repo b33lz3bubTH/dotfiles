@@ -50,13 +50,17 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # ------------ App Configs ------------
 
     # Menu
-    ([mod], "m", lazy.spawn("ulauncher --no-extensions --no-window-shadow")),
+    # ([mod], "m", lazy.spawn("ulauncher --no-extensions --no-window-shadow")),
 
     # Window Nav
     ([mod, "shift"], "m", lazy.spawn("rofi -show")),
 
+    ([mod], "a", lazy.spawn("bash /home/b33lz3bub/.config/rofi/applets/menu/apps.sh")),
+    ([mod], "m", lazy.spawn("bash /home/b33lz3bub/.config/rofi/launchers/misc/launcher.sh")),
+
+    ([mod, "shift"], "m", lazy.spawn("bash /home/b33lz3bub/.config/rofi/applets/applets/quicklinks.sh")),
     # Browser
-    ([mod], "b", lazy.spawn("chromium")),
+    ([mod], "b", lazy.spawn("brave")),
 
     # File Explorer
     ([mod], "e", lazy.spawn("nautilus")),

@@ -8,7 +8,7 @@
  */
 
 configuration {
-	font:                      		"Comfortaa 14";
+	font:                      		"Cascadia Code 14";
     disable-history:                false;
     fullscreen:                     false;
 	hide-scrollbar: 				true;

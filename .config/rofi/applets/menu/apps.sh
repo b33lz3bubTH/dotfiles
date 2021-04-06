@@ -34,7 +34,9 @@ case $chosen in
 		elif [[ -f /usr/bin/urxvt ]]; then
 			urxvt &
 		elif [[ -f /usr/bin/kitty ]]; then
-			kitty &
+			notify-send -i gnome-xterm "Launching Terminal Emulator" "~ Kitty"
+                        kitty &
+
 		elif [[ -f /usr/bin/xterm ]]; then
 			xterm &
 		elif [[ -f /usr/bin/xfce4-terminal ]]; then
@@ -49,14 +51,16 @@ case $chosen in
 		if [[ -f /usr/bin/thunar ]]; then
 			thunar &
 		elif [[ -f /usr/bin/nautilus ]]; then
+			notify-send -i system-file-manager "Launching File Explorer" "~ Nautilus"
 			nautilus &
 		else
 			msg "No suitable file manager found!"
 		fi
         ;;
     $editor)
-		if [[ -f /usr/bin/geany ]]; then
-			geany &
+		if [[ -f /usr/bin/emacs ]]; then
+			notify-send -i emacs "Launching Text Editor" "~ Emacs"
+			emacs &
 		elif [[ -f /usr/bin/leafpad ]]; then
 			leafpad &
 		elif [[ -f /usr/bin/mousepad ]]; then
@@ -68,8 +72,9 @@ case $chosen in
 		fi
         ;;
     $browser)
-		if [[ -f /usr/bin/firefox ]]; then
-			firefox &
+		if [[ -f /usr/bin/qutebrowser ]]; then
+			notify-send -i webkit "Launching Browser" "~ Qutebrowser"
+			qutebrowser &
 		elif [[ -f /usr/bin/chromium ]]; then
 			chromium &
 		elif [[ -f /usr/bin/midori ]]; then
@@ -79,8 +84,9 @@ case $chosen in
 		fi
         ;;
     $music)
-		if [[ -f /usr/bin/deadbeef ]]; then
-			deadbeef &
+		if [[ -f /usr/bin/spotify ]]; then
+			notify-send -i spotify-beta "Launching Music Player" "~ Spotify"
+			spotify &
 		else
 			msg "No suitable music player found!"
 
@@ -88,6 +94,7 @@ case $chosen in
         ;;
     $settings)
 		if [[ -f /usr/bin/qt5ct ]]; then
+			notify-send -i designer-qt5 "Launching Qt Settings" "~ Qt5ct Pannel"
 			qt5ct &
 		else
 			msg "No suitable settings manager found!"

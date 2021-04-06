@@ -120,7 +120,9 @@ myStartupHook :: X ()
 myStartupHook = do
           
           spawnOnce "feh --bg-scale ~/Pictures/wall.jpg &"
-          spawnOnce "picom --experimental-backends &"
+          -- spawnOnce "picom --experimental-backends &"
+          -- spawnOnce "picom -b"
+          spawnOnce "xcompmgr -f -C -n -D 3 &"
           spawnOnce "/usr/bin/emacs --daemon &"
           spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 23 &"
           spawnOnce "volumeicon &"      
@@ -518,7 +520,7 @@ myLayoutHook = avoidStruts $ mouseResize $ windowArrange $ T.toggleLayouts float
                                  ||| threeRow
 
 -- myWorkspaces = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "]
-myWorkspaces = [" dev ", " www ", " sys ", " doc ", " vbox ", " chat ", " mus ", " vid ", " gfx "]
+myWorkspaces = [" dev ", " https:// ", " sys ", " docs ", " vbox ", " chat ", " mus ", " vid ", " gfx "]
 myWorkspaceIndices = M.fromList $ zipWith (,) myWorkspaces [1..] -- (,) == \x y -> (x,y)
 
 clickable ws = "<action=xdotool key super+"++show i++">"++ws++"</action>"
@@ -616,7 +618,7 @@ myKeys =
     -- Window nav
     ("M-S-m", spawn "rofi -show"),
     -- Browser
-    ("M-b", spawn "chromium"),
+    ("M-b", spawn "brave"),
     -- File explorer
     ("M-e", spawn "nautilus"),
     -- Terminal

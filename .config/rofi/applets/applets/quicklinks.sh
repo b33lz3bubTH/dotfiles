@@ -16,8 +16,8 @@ msg() {
 }
 
 # Browser
-if [[ -f /usr/bin/firefox ]]; then
-	app="firefox"
+if [[ -f /usr/bin/qutebrowser ]]; then
+	app="qutebrowser"
 elif [[ -f /usr/bin/chromium ]]; then
 	app="chromium"
 elif [[ -f /usr/bin/midori ]]; then
@@ -34,6 +34,7 @@ twitter=""
 github=""
 mail=""
 youtube=""
+
 
 # Variable passed to rofi
 options="$google\n$facebook\n$twitter\n$github\n$mail\n$youtube"
