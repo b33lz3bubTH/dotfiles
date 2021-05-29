@@ -3,8 +3,8 @@
 -- you can find weather location codes here: http://weather.noaa.gov/index.html
 
 Config { font    = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=18:antialias=true:hinting=true"
-       , additionalFonts = [ "xft:Mononoki Nerd Font:pixelsize=11:antialias=true:hinting=true"
-                           , "xft:FontAwesome:pixelsize=18"
+       , additionalFonts = [ "xft:UbuntuMono Nerd Font:pixelsize=18:antialias=true:hinting=true"
+                           , "xft:UbuntuMono Nerd Font:pixelsize=18"
                            ]
        , bgColor = "#282c34"
        , fgColor = "#ff6c6b"
@@ -14,8 +14,8 @@ Config { font    = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=18:antialias=
        , persistent = True
        , iconRoot = "~/.xmonad/xpm/"  -- default: "."
        , commands = [ 
-        Run Date "  %d %b %Y %H:%M " "date" 600,
-        Run Network "enp2s0" ["-t", " <rx>kb  <tx>kb"] 150,
+        Run Date "  %d %b %H:%M " "date" 600,
+        Run Network "enp2s0" ["-t", " <rx>kb  <tx>kb"] 20,
         Run Cpu ["-t", " (<total>%)","-H","50","--high","red"] 20,
         Run Memory ["-t", "  <used>M (<usedratio>%)"] 150,
         Run Com "volume" [] "volume" 10,
@@ -29,4 +29,4 @@ Config { font    = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=18:antialias=
         \<fc=#FFB86C> %cpu% </fc>\
         \<fc=#FF5555> %memory% </fc>\
         \<fc=#c3e88d> %enp2s0% </fc>\
-        \<fc=#8BE9FD> %date% </fc>         "
+        \<fc=#8BE9FD> %date% </fc>    "

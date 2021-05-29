@@ -1,10 +1,12 @@
 #!/bin/sh
 # picom -b
-# picom --config ~/.config/picom/picom.conf --experimental-backends -b
-xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
+# picom --experimental-backends -b
 # systray battery icon
 cbatticon -u 5 &
 # systray volume
 volumeicon &
+nitrogen --restore &
 
-feh --bg-scale ~/Pictures/wall.jpg &
+xcompmgr -f -C -n -D 3 &
+
+# xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &

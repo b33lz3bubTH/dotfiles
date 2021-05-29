@@ -79,7 +79,7 @@ import XMonad.Util.Run (runProcessWithInput, safeSpawn, spawnPipe)
 import XMonad.Util.SpawnOnce
 
 myFont :: String
-myFont = "xft:Cascadia Code:regular:size=9:antialias=true:hinting=true"
+myFont = "xft:UbuntuMono Nerd Font:regular:size=9:antialias=true:hinting=true"
 
 myEmojiFont :: String
 myEmojiFont = "xft:JoyPixels:regular:size=9:antialias=true:hinting=true"
@@ -122,6 +122,7 @@ myStartupHook = do
           spawnOnce "feh --bg-scale ~/Pictures/wall.jpg &"
           -- spawnOnce "picom --experimental-backends &"
           -- spawnOnce "picom -b"
+          -- spawnOnce "nitrogen --restore &"
           spawnOnce "xcompmgr -f -C -n -D 3 &"
           spawnOnce "/usr/bin/emacs --daemon &"
           spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 23 &"
@@ -499,7 +500,7 @@ myTabTheme = def { fontName            = myFont
 -- Theme for showWName which prints current workspace when you change workspaces.
 myShowWNameTheme :: SWNConfig
 myShowWNameTheme = def
-    { swn_font              = "xft:Cascadia Code:bold:size=60"
+    { swn_font              = "xft:UbuntuMono Nerd Font:bold:size=60"
     , swn_fade              = 1.0
     , swn_bgcolor           = "#1c1f24"
     , swn_color             = "#ffffff"
@@ -520,7 +521,7 @@ myLayoutHook = avoidStruts $ mouseResize $ windowArrange $ T.toggleLayouts float
                                  ||| threeRow
 
 -- myWorkspaces = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "]
-myWorkspaces = [" dev ", " https:// ", " sys ", " docs ", " vbox ", " chat ", " mus ", " vid ", " gfx "]
+myWorkspaces = [" dev ", " web ", " sys ", " docs ", " vbox ", " chat ", " mus ", " vid ", " gfx "]
 myWorkspaceIndices = M.fromList $ zipWith (,) myWorkspaces [1..] -- (,) == \x y -> (x,y)
 
 clickable ws = "<action=xdotool key super+"++show i++">"++ws++"</action>"

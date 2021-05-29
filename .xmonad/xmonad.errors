@@ -1,7 +1,7 @@
 
-xmonad.hs:614:1: warning: [-Wtabs]
+xmonad.hs:615:1: warning: [-Wtabs]
     Tab character found here, and in one further location.
     Please use spaces instead.
     |
-614 |         ("M-m", spawn "~/.config/rofi/launchers/misc/launcher.sh"),
+615 |         ("M-m", spawn "~/.config/rofi/launchers/misc/launcher.sh"),
     | ^^^^^^^^
